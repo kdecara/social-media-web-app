@@ -22,3 +22,12 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+#status-text-box{
+    width: 50%;
+
+    input{
+        width: 100%;
+        height: 3rem;
+    }
+}
