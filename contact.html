@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eva Social — Contact Us</title>
+</head>
+<body>
+  <aside>
+    <a href="index.html"><img src="evalogo.png" alt="EVA IT CS LOGO" height="100"></a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="terms-and-agreement.html">Terms and agreement</a></li>
+      <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>Contact Us</h1>
+    <p>Have a question or feedback? Fill out the form below and we’ll get back to you.</p>
+
+    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="_hp" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;">
+
+      <div>
+        <label for="name">Name</label><br>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+      </div>
+
+      <div>
+        <label for="email">Email</label><br>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+
+      <div>
+        <label for="subject">Subject</label><br>
+        <input id="subject" name="subject" type="text" required>
+      </div>
+
+      <div>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+
+      <div>
+        <input id="agree" name="agree" type="checkbox" required>
+        <label for="agree">I agree to the <a href="terms-and-agreement.html">Terms</a>.</label>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p><small>Tip: If you’re not using a backend, services like Formspree or Netlify Forms can accept this POST for you.</small></p>
+  </main>
+</body>
+</html>
